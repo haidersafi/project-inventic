@@ -4,11 +4,11 @@ import React, { Component } from 'react';
 import { MDBListGroup, MDBListGroupItem, MDBIcon } from 'mdbreact';
 import { NavLink } from 'react-router-dom';
 
-class TopNavigation extends Component {
+class SideNavigation extends Component {
   
     render(){
     return (
-        <div className="sidebar-fixed position-fixed">
+        <div className={`sidebar-fixed position-fixed`}>
             {/* <a href="#!" className="logo-wrapper waves-effect">
                 <img alt="MDB React Logo" className="img-fluid" src={logo}/>
             </a> */}
@@ -98,4 +98,4 @@ class TopNavigation extends Component {
         }
 }
 
-export default TopNavigation;
+export default SideNavigation;
