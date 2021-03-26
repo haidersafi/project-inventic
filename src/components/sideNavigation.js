@@ -20,73 +20,73 @@ class TopNavigation extends Component {
                         Dashboard
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/profile" activeClassName="activeClass">
+                <NavLink to="/product" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}}  icon="list" className="mr-3"/>
                        Product 
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/tables" activeClassName="activeClass">
+                <NavLink to="/purchase" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="credit-card"className="mr-3"/>
                        Purchase
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/maps" activeClassName="activeClass">
+                <NavLink to="/sale" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="shopping-cart" className="mr-3"/>
                        Sale
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/expense" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="suitcase" className="mr-3"/>
                        Expense
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/profile" activeClassName="activeClass">
+                <NavLink to="/quotation" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="book-open" className="mr-3"/>
                        Quotation
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/transfer" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="exchange-alt" className="mr-3"/>
                        Transfer
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/return" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="arrow-left" className="mr-3"/>
                        Return
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/accounting" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="briefcase" className="mr-3"/>
                        Accounting
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/hrm" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="users" className="mr-3"/>
                        HRM
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/people" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="user" className="mr-3"/>
                        People
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/reports" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="file-alt" className="mr-3"/>
                        Reports
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/404" activeClassName="activeClass">
+                <NavLink to="/settings" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="cog" className="mr-3"/>
                        Settings

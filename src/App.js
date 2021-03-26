@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Routes from '../src/components/Routes';
+import Routes from '../src/components/Routes';
 import TopNavigation from './components/topNavigation';
 import SideNavigation from './components/sideNavigation';
 // import Footer from './components/Footer';
@@ -12,9 +12,9 @@ class App extends Component {
         <div className="flexible-content">
           <TopNavigation />
           <SideNavigation />
-          {/* <main id="content" className="p-5">
+          <main id="content" className="p-5">
             <Routes />
-          </main> */}
+          </main>
           {/* <Footer /> */}
         </div>
     );

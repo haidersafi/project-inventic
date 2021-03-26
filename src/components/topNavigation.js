@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon } from 'mdbreact';
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
+
 
 class TopNavigation extends Component {
     state = {
@@ -21,43 +22,53 @@ class TopNavigation extends Component {
     render() {
         return (
             <MDBNavbar className="flexible-navbar" light expand="md" scrolling>
-                 <MDBNavbarNav left>
-                        <MDBNavItem className="sideNav-toggle-btn">
-                            <a class="btn btn-secondary btn-sm" style={{backgroundcolor:"#9400D3"}} href="#!" role="button">
+                <MDBNavbarNav left>
+                    <MDBNavItem className="sideNav-toggle-btn">
+                        <a class="btn btn-secondary btn-sm" style={{ backgroundcolor: "#7e57c2" }} href="#!" role="button">
                             <i class="fas fa-bars"></i></a>
-                        </MDBNavItem>
-                        </MDBNavbarNav>
+                    </MDBNavItem>
+                </MDBNavbarNav>
                 <MDBNavbarBrand className="text-center" href="/">
-                <h3 style={{color:"black"}}> <i style={{color:"#9400D3"}} class="fas fa-boxes"></i> SalePro</h3>
+                    <h3 style={{ color: "black" }}> <i style={{ color: "#7e57c2" }} class="fas fa-boxes"></i> SalePro</h3>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler onClick={this.onClick} />
                 <MDBCollapse isOpen={this.state.collapse} navbar>
                     <MDBNavbarNav right>
                         <MDBNavItem >
-                            <a class="btn btn-secondary btn-sm" style={{backgroundcolor:"#9400D3"}} href="#!" role="button">
+                            <a class="btn btn-secondary btn-sm" style={{ backgroundcolor: "#7e57c2" }} href="#!" role="button">
                                 <i class="fas fa-lock"></i> Pos</a>
                         </MDBNavItem>
 
                         <MDBNavItem >
                             <a className="nav-link navbar-link" rel="noopener noreferrer" target="_blank" href="#">
-                                <i  style={{color:"#9400D3"}} class="fas fa-arrows-alt"></i> </a>
+                                <i style={{ color: "#7e57c2" }} class="fas fa-arrows-alt"></i> </a>
                         </MDBNavItem>
                         <MDBNavItem >
                             <a className="nav-link navbar-link" rel="noopener noreferrer" target="_blank" href="#">
-                            <i style={{color:"#9400D3"}} class="fas fa-archive"></i> </a>
+                                <i style={{ color: "#7e57c2" }} class="fas fa-archive"></i> </a>
                         </MDBNavItem>
                         <MDBNavItem>
                             <a className="nav-link navbar-link" rel="noopener noreferrer" target="_blank" href="#">
-                                <i  style={{color:"#9400D3"}} class="far fa-bell"></i></a>
+                                <i style={{ color: "#7e57c2" }} class="far fa-bell"></i></a>
+                        </MDBNavItem>
+                        <span style={{ color :"#7e57c2"}} className="counter">1</span>
+                        <MDBNavItem >
+                            <MDBNavLink to="#"><i style={{ color: "#7e57c2" }} class="fas fa-globe"></i>Language</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem >
-                            <MDBNavLink to="#"><i style={{color:"#9400D3"}} class="fas fa-globe"></i>Language</MDBNavLink>
+                            <MDBNavLink to="#"><i style={{ color: "#7e57c2" }} class="fas fa-info-circle"></i>Help</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem >
-                            <MDBNavLink to="#"><i  style={{color:"#9400D3"}} class="fas fa-info-circle"></i>Help</MDBNavLink>
-                        </MDBNavItem>
-                        <MDBNavItem >
-                            <MDBNavLink to="#"><i  style={{color:"#9400D3"}} class="fas fa-user-shield"></i>Admin</MDBNavLink>
+                            {/* <MDBDropdown>
+                                <MDBDropdownToggle ize="sm" caret style={{ backgroundColor: "white" }}>
+                                    <i style={{ color: "#7e57c2" }} class="fas fa-user-shield"></i> Admin
+                                     </MDBDropdownToggle>
+                                <MDBDropdownMenu >
+                                    <MDBDropdownItem>Dropdown link</MDBDropdownItem>
+                                    <MDBDropdownItem>Dropdown link</MDBDropdownItem>
+                                </MDBDropdownMenu>
+                            </MDBDropdown> */}
+                            <MDBNavLink to="#"><i style={{ color: "#7e57c2" }} class="fas fa-user-shield"></i>Admin</MDBNavLink>
                         </MDBNavItem>
 
                         {/* <MDBNavItem>
