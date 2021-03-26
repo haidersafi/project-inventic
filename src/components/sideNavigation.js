@@ -3,16 +3,19 @@ import React, { Component } from 'react';
 // import logo from "../assets/React_logo.png";
 import { MDBListGroup, MDBListGroupItem, MDBIcon } from 'mdbreact';
 import { NavLink } from 'react-router-dom';
+import './sidenavigation.css'
+
 
 class SideNavigation extends Component {
   
     render(){
     return (
-        <div className={`sidebar-fixed position-fixed`}>
+        
+        <div className={`sidebar-fixed position-fixed mt-1 scroll`}>
             {/* <a href="#!" className="logo-wrapper waves-effect">
                 <img alt="MDB React Logo" className="img-fluid" src={logo}/>
             </a> */}
-            <MDBListGroup className="list-group-flush">
+            <MDBListGroup className="list-group-flush overflowY-auto">
                 <NavLink exact={true} to="/" activeClassName="activeClass">
                     <br />
                     <MDBListGroupItem>

@@ -6,7 +6,6 @@ class TopNavigation extends Component {
     state = {
         collapse: false,
         dropdownOpen:true,
-        display:true
     }
 
     onClick = () => {
@@ -16,22 +15,20 @@ class TopNavigation extends Component {
         });
     }
 
-    toggle = () => {
+    // toggle = () => {
         
-        this.setState({
+    //     this.setState({
 
-            dropdownOpen: !this.state.dropdownOpen
-        });
-      this.state.dropdownOpen?this.setState({display: 'none'}):this.setState({display:'visible'})
-    }
+    //         dropdownOpen: !this.state.dropdownOpen
+    //     });
+    // }
 
     render() {
         return (
-            <div>
-            <MDBNavbar className="flexible-navbar" light expand="md" scrolling>
+            <MDBNavbar className="flexible-navbar sticky-top w-100 "  light expand="md" scrolling >
             <MDBNavbarNav left>
                 <MDBNavItem className="sideNav-toggle-btn">
-                    <a class="btn btn-secondary btn-sm" onClick={this.toggle} style={{ backgroundcolor: "#7e57c2" }} href="#!" role="button">
+                    <a class="btn btn-secondary btn-sm" onClick={this.props.toggle} style={{ backgroundcolor: "#7e57c2" }} href="#!" role="button">
                         <i class="fas fa-bars"></i></a>
                 </MDBNavItem>
             </MDBNavbarNav>
@@ -110,9 +107,7 @@ class TopNavigation extends Component {
                 </MDBNavbarNav>
             </MDBCollapse>
         </MDBNavbar>
-        {this.state.dropdownOpen?<SideNavigation display={this.state.display}/>:null}
-        {console.log(this.state.dropdownOpen)}
-            </div>
+            
            
         );
     }
