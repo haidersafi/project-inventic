@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { MDBCol, MDBCard, MDBCardBody, MDBCardHeader, MDBRow, MDBListGroup, MDBListGroupItem, MDBBadge, MDBIcon } from 'mdbreact';
-import { Bar, Pie } from 'react-chartjs-2';
+import { Bar, Pie,Polar } from 'react-chartjs-2';
 
 class ChartSection1 extends Component {
     render(){
