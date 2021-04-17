@@ -11,7 +11,9 @@ class SideNavigation extends Component {
     render(){
     return (
         
-        <div className={`sidebar-fixed position-fixed mt-1 scroll`}>
+        <div 
+        className={`sidebar-fixed position-fixed mt-1 scroll`}
+        >
             {/* <a href="#!" className="logo-wrapper waves-effect">
                 <img alt="MDB React Logo" className="img-fluid" src={logo}/>
             </a> */}
@@ -21,6 +23,12 @@ class SideNavigation extends Component {
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="chart-pie" className="mr-3"/>
                         Dashboard
+                    </MDBListGroupItem>
+                </NavLink>
+                <NavLink to="/tables" activeClassName="activeClass">
+                    <MDBListGroupItem>
+                        <MDBIcon style={{color:"#9400D3"}} icon="cog" className="mr-3"/>
+                       Tables
                     </MDBListGroupItem>
                 </NavLink>
                 <NavLink to="/product" activeClassName="activeClass">
@@ -47,13 +55,13 @@ class SideNavigation extends Component {
                        Expense
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/quotation" activeClassName="activeClass">
+                {/* <NavLink to="/quotation" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="book-open" className="mr-3"/>
                        Quotation
                     </MDBListGroupItem>
-                </NavLink>
-                <NavLink to="/transfer" activeClassName="activeClass">
+                </NavLink> */}
+                {/* <NavLink to="/transfer" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="exchange-alt" className="mr-3"/>
                        Transfer
@@ -64,37 +72,50 @@ class SideNavigation extends Component {
                         <MDBIcon style={{color:"#9400D3"}} icon="arrow-left" className="mr-3"/>
                        Return
                     </MDBListGroupItem>
-                </NavLink>
+                </NavLink> */}
                 <NavLink to="/accounting" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="briefcase" className="mr-3"/>
                        Accounting
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink to="/hrm" activeClassName="activeClass">
+                {/* <NavLink to="/hrm" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="users" className="mr-3"/>
                        HRM
                     </MDBListGroupItem>
-                </NavLink>
-                <NavLink to="/people" activeClassName="activeClass">
+                </NavLink> */}
+                {/* <NavLink to="/people" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="user" className="mr-3"/>
                        People
                     </MDBListGroupItem>
-                </NavLink>
-                <NavLink to="/reports" activeClassName="activeClass">
+                </NavLink> */}
+                {/* <NavLink to="/reports" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="file-alt" className="mr-3"/>
                        Reports
                     </MDBListGroupItem>
-                </NavLink>
+                </NavLink> */}
                 <NavLink to="/settings" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon style={{color:"#9400D3"}} icon="cog" className="mr-3"/>
                        Settings
                     </MDBListGroupItem>
                 </NavLink>
+                <NavLink to="/users" activeClassName="activeClass">
+                    <MDBListGroupItem>
+                        <MDBIcon style={{color:"#9400D3"}} icon="user-cog" className="mr-3"/>
+                      Users
+                    </MDBListGroupItem>
+                </NavLink>
+                <NavLink to="/roles" activeClassName="activeClass">
+                    <MDBListGroupItem>
+                        <MDBIcon style={{color:"#9400D3"}} icon="user-tie" className="mr-3"/>
+                    Roles
+                    </MDBListGroupItem>
+                </NavLink>
+               
             </MDBListGroup>
         </div>
     );

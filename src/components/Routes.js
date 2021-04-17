@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import DashboardPage from './pages/DashboardPage';
 // import ProfilePage from './pages/ProfilePage';
-// import TablesPage from './pages/TablesPage';
+import TablesPage from './pages/TablesPage';
 // import MapsPage from './pages/MapsPage';
 // import NotFoundPage from './pages/NotFoundPage';
 
@@ -16,6 +16,8 @@ import ReturnPage from './pages/Return/ReturnPage';
 import AccountingPage from './pages/Accounting/AccountingPage';
 import HRMPage from './pages/HRM/HRMPage';
 import PeoplePage from './pages/People/PeoplePage';
+import UsersPage from './pages/Settings/Users/UsersPage';
+import RolesPage from './pages/Settings/RolesPage';
 
 class Routes extends React.Component {
   render() {
@@ -41,6 +43,10 @@ class Routes extends React.Component {
         <Route path='/accounting' component={AccountingPage} />
         <Route path='/hrm' component={HRMPage} />
         <Route path='/people' component={PeoplePage} />
+        <Route path='/tables' component={TablesPage} />
+        <Route path='/users' component={UsersPage} />
+        <Route path='/roles' component={RolesPage} />
+
 
       </Switch>
     );

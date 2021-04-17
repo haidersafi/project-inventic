@@ -1,6 +1,7 @@
-.scroll:hover{
-    overflow-y: auto;
+/* .scroll:hover{
+    overflow-y:scroll;
+    overflow-x:hidden!important;
     height:100%;
  scrollbar-color: rgb(194, 189, 189);
     scrollbar-width: thin;
-}
+} */

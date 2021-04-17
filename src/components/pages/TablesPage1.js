@@ -1,39 +1,9 @@
-// import React, { Component } from 'react'
- import React, {Component } from 'react'
-
+import React from 'react'
 import { MDBRow, MDBCol, MDBView, MDBCard, MDBCardBody, MDBTable, MDBTableHead, MDBTableBody } from 'mdbreact';
 
-export class TablesPage extends Component {
-    state={
-        items:[]
-    }
-
-    componentDidMount(){
-        fetch("https://reqres.in/api/users?page=1&per_page=10")
-        .then(res =>res.json())
-        .then(
-            (result) =>{
-                this.stateSetter(result.data)
-            },
-            (error) =>{
-                this.setState({
-                    error
-                });
-            }
-        )
-    }
-
-    stateSetter(data){
-        this.setState({
-            items:data
-        });
-    }
-
-    render() {
-      
-        return (
-            <div>
-                 <>
+const TablesPage =  () => {
+  return (
+    <>
       <MDBRow>
       <MDBCol md="12">
         <MDBCard className="mt-5">
@@ -46,22 +16,14 @@ export class TablesPage extends Component {
             <MDBTable>
               <MDBTableHead>
                 <tr>
-                  <th>ID</th>
-                  <th>Email</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
+                  <th>#</th>
+                  <th>First</th>
+                  <th>Last</th>
+                  <th>Handle</th>
                 </tr>
               </MDBTableHead>
               <MDBTableBody>
-                  {this.state.items.map((item) =>(
-                   <tr>
-                   <td>{item.id}</td>
-                   <td>{item.email}</td>
-                   <td>{item.first_name}</td>
-                   <td>{item.last_name}</td>
-                 </tr>   
-                  ))}
-                {/* <tr>
+                <tr>
                   <td>1</td>
                   <td>Mark</td>
                   <td>Otto</td>
@@ -84,7 +46,7 @@ export class TablesPage extends Component {
                   <td>Saif-ur</td>
                   <td>Rehman</td>
                   <td>@cheetah</td>
-                </tr> */}
+                </tr>
               </MDBTableBody>
             </MDBTable>
             {/* <h3 className="mt-5 text-left"><strong>MDBTable head options</strong></h3>
@@ -186,9 +148,7 @@ export class TablesPage extends Component {
       </MDBCol>
     </MDBRow>
     </>
-            </div>
-        )
-    }
+  )
 }
 
-export default TablesPage
+export default TablesPage;
