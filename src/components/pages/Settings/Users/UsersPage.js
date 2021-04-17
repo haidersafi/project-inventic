@@ -76,11 +76,11 @@ const UsersPage = () => {
 
                         
                     ) : (
-                            <MDBCard className="h1-responsive align-middle" style={{ width: '100%', margin: '4%' }}>
-                                <MDBRow>
+                            <MDBCard className="h1-responsive align-middle" style={{ width: '100%', margin: '4%'}}>
+                                <MDBRow >
                                     <MDBCol>
                                         <MDBCardBody >
-                                            <h2>Add User</h2>
+                                            <h2 className="text-center">Add User</h2>
                                             <AddUserForm addUser={addUser} />
                                         </MDBCardBody>
                                     </MDBCol>
