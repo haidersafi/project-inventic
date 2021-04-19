@@ -16,9 +16,12 @@ const AddUserForm = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
+      
         if (user.name && user.username) {
             handleChange(e, props.addUser(user));
+            props.viewModal();
         }
+        
     }
 
     return (

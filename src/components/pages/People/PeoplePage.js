@@ -18,10 +18,8 @@ showTable:false}
 
 
     AddUser=(e)=>{
-     let name=e.target.name;
-     let value=e.target.value;
-     let obj={[name]:value};
-      this.setState(prevState=>({users:[{...prevState.users,obj}]}))
+    
+    
         
             
               
@@ -77,17 +75,7 @@ render(){
   <div class="modal-content">
     <span class="close" onClick={this.ToggleModal}>&times;</span>
     
-    <form onSubmit={this.viewTable}>
-    <label>Name</label><input type="text" name="fullName" value={this.state.users.fullName} onChange={this.AddUser} />
-    <label>Email</label><input type="text" name="email" value={this.state.users.email} onChange={this.AddUser} />
-    <label>Role</label><select name="role">
-    <option value="ano">Anonymous</option>
-    <option value="Admin">Admin</option>
-    <option value="user">User</option>
    
-    </select>
-    <input type="submit" value="submit" />
-    </form>
   </div>
 
 </div>:null}

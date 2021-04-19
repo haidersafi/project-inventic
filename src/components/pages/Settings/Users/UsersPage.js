@@ -34,7 +34,11 @@ const UsersPage = () => {
     const updateUser = (newUser) => {
         setUsers(users.map(user => (user.id === currentUser.id ? newUser : user)))
     }
+const [setModal,ToggleModal]=useState(false);
 
+const viewModal=()=>{
+    ToggleModal(!setModal)
+}
 
     return (
         <div >
@@ -48,7 +52,7 @@ const UsersPage = () => {
                USERS
               </h3>
 
-                            <MDBBtn social="fb" className="mt-4" style={{ float: 'right' }} color="default">
+                            <MDBBtn social="fb" className="mt-4" style={{ float: 'right' }} color="default" onClick={viewModal}>
                                 <MDBIcon icon="plus" /> Add User
         </MDBBtn>
                             <br />
@@ -76,16 +80,17 @@ const UsersPage = () => {
 
                         
                     ) : (
+                         setModal ?(
                             <MDBCard className="h1-responsive align-middle" style={{ width: '100%', margin: '4%'}}>
                                 <MDBRow >
                                     <MDBCol>
                                         <MDBCardBody >
                                             <h2 className="text-center">Add User</h2>
-                                            <AddUserForm addUser={addUser} />
+                                            <AddUserForm addUser={addUser} viewModal={viewModal} />
                                         </MDBCardBody>
                                     </MDBCol>
                                 </MDBRow>
-                            </MDBCard>
+                            </MDBCard>):null
                            
                         )}
                 </div>
